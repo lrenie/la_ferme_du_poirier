@@ -1,0 +1,174 @@
+@import "style.scss";
+
+// IMG PRESENTATION
+.photo-header {
+  height: 250px;
+  padding-top: 70px;
+  box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-header {
+  height: 65px;
+  fill: $blanc;
+}
+
+// LA FERME DU POIRIER
+.assemblage-logo {
+  position: relative;
+  height: 180px;
+  width: 200px
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+p {
+  text-align: justify;
+  padding-top: 30px;
+}
+
+.cursor-click {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: $blanc;
+}
+
+// LA FERME
+.la-ferme {
+
+
+  .presentation-poire {
+    height: 180px;
+    fill: $noir;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .presentation-lf-triangle {
+    height: 140px;
+    fill: $jaune;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: rotate(-10deg) translateX(-53%);
+  }
+
+  .presentation-ferme-logo {
+    height: 70px;
+    fill: $noir;
+    position: absolute;
+    left: 50%;
+    top: 65px;
+    transform: translateX(-50%);
+  }
+  .presentation-lieu {
+    height: 180px;
+    width: 240px;
+    position: relative;
+    margin-top: 20px;
+
+    .france {
+      height: 100%;
+      position: absolute;
+      right: 0px;
+    }
+
+    .sologne {
+      fill: $noir;
+      height: 80px;
+      position: absolute;
+      top: 70px;
+      left: 0px;
+    }
+
+    .presentation-lieu-triangle {
+      height: 110px;
+      fill: $jaune;
+      position: absolute;
+      left: 15px;
+      top: 120px;
+      transform: rotate(80deg) translateX(-53%);
+    }
+
+    .poire-lieu {
+      fill: $jaune;
+      height: 20px;
+      position: absolute;
+      top: 115px;
+      left: 50px;
+    }
+  }
+}
+
+// L'AGNEAU DE SOLOGNE
+.agneau-de-sologne {
+  .presentation-agneau {
+    height: 160px;
+    fill: $blanc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .presentation-ads-triangle {
+    height: 140px;
+    fill: $jaune;
+    position: absolute;
+    left: 50%;
+    top: -173px;
+    transform: rotate(-59deg) translateX(-116%);
+  }
+
+  .presentation-agneau-logo {
+    height: 70px;
+    position: absolute;
+    left: 51%;
+    top: 27px;
+    transform: translateX(-50%);
+  }
+
+  h1, p {
+    color: $blanc;
+  }
+}
+
+// LE COUNTRY CLUB
+.country-club {
+  .presentation-club {
+    height: 80px;
+    fill: $noir;
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%);
+  }
+
+  .presentation-club-triangle {
+    height: 140px;
+    fill: $jaune;
+    position: absolute;
+    left: 176px;
+    top: 100px;
+    transform: rotate(41deg) translateX(-116%);
+  }
+
+  .presentation-club-logo {
+    height: 70px;
+    fill: $noir;
+    position: absolute;
+    left: 51%;
+    top: 27px;
+    transform: translateX(-50%);
+  }
+
+  .cursor-click {
+    bottom: 45px;
+    left: 109px;
+  }
+}

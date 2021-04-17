@@ -1,0 +1,93 @@
+@import "style.scss";
+
+  h1 {
+    text-align: center;
+  }
+
+  .index {
+    position: relative;
+  }
+
+// NAVBAR
+.navbar-index {
+  position: absolute;
+  top: -70px;
+  transition: cubic-bezier(.785,.135,.15,.86) .5s;
+}
+
+.navbar-index-active {
+  top: 0px;
+}
+
+// HEADER
+.header {
+  height: 300px;
+  padding: 30px;
+
+  .burger-menu-index {
+    width: 25px;
+    height: 25px;
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+  svg {
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .logo-header {
+    height: 90px;
+    fill: $blanc;
+  }
+}
+
+// DÉCOUVRIR
+.decouvrir {
+  padding: 40px;
+
+  .card {
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-poire {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: $blanc;
+  }
+
+  .card-agneau {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: $blanc;
+  }
+
+  .card-club {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: $blanc;
+  }
+
+  h2, p {
+    color: $blanc;
+  }
+}
+
+// ACTIVITÉS
+.activites{
+  padding: 40px;
+
+  h1, h2, p {
+    color: $blanc;
+  }
+}

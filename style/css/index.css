@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+@font-face {
+  src: url(../fonts/concept_medium.ttf) format(ttf);
+  font-family: Minion;
+  font-style: normal; }
+@font-face {
+  src: url(../fonts/concept_bold.ttf) format(ttf);
+  font-family: Minion;
+  font-style: bold; }
+body {
+  margin: 0px;
+  background-color: #FDFDFD; }
+  body h1 {
+    margin: 0px;
+    font-size: 18px;
+    font-family: Minion;
+    font-weight: bold; }
+  body h2 {
+    margin: 0px;
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 400; }
+  body p {
+    margin: 0px;
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 300; }
+  body .background-color-noir {
+    background-color: #282827; }
+  body .background-color-blanc {
+    background-color: #FDFDFD; }
+  body .background-color-jaune-degrade {
+    background: linear-gradient(180deg, rgba(233, 221, 87, 0) 0%, #E9DD57 50%); }
+  body .container {
+    padding: 50px 25px; }
+  body .flex-c-c {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .relative {
+    position: relative; }
+  body .position-relative {
+    position: relative; }
+  body .m-b-50 {
+    margin-bottom: 50px; }
+  body .height-100pc {
+    height: 100%; }
+
+.burger-menu {
+  width: 25px;
+  height: 25px;
+  z-index: 3;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  cursor: pointer; }
+  .burger-menu svg {
+    fill: #282827;
+    width: 100%;
+    position: absolute; }
+
+.svg-burger-menu-1 {
+  top: 0px;
+  right: 0px;
+  transition: .4s ease; }
+
+.svg-burger-menu-2 {
+  top: 45%;
+  transition: .2s ease; }
+
+.svg-burger-menu-3 {
+  bottom: 0px;
+  right: 0px;
+  transition: .4s ease; }
+
+.svg-burger-menu-1-active {
+  fill: #FDFDFD !important;
+  transform: rotate(-45deg);
+  top: 10px;
+  right: 10px;
+  transition: .4s ease; }
+
+.svg-burger-menu-2-active {
+  fill: transparent !important;
+  transition: .2s ease; }
+
+.svg-burger-menu-3-active {
+  fill: #FDFDFD !important;
+  transform: rotate(45deg);
+  top: 10px;
+  right: 10px;
+  transition-duration: .4s ease; }
+
+.navbar-container {
+  width: 80px;
+  height: 70px;
+  right: 0px;
+  position: fixed;
+  z-index: 3; }
+
+.navbar {
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  background-color: #FDFDFD;
+  z-index: 2;
+  box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1); }
+  .navbar .navbar-logo {
+    height: 35px; }
+  .navbar .navbar-arbres {
+    height: 50px;
+    position: absolute;
+    left: 25px;
+    bottom: 0px; }
+
+.footer {
+  width: 100vw; }
+
+.footer-slogan {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.footer-horizon {
+  fill: #282827;
+  position: absolute;
+  bottom: 0px;
+  width: 600px; }
+
+.footer-content {
+  width: 100%;
+  height: 300px; }
+
+.footer-logo {
+  fill: #FDFDFD;
+  height: 40px;
+  padding-bottom: 20px; }
+
+.footer-navigation {
+  display: grid;
+  text-align: center; }
+  .footer-navigation a {
+    text-decoration: none;
+    color: #FDFDFD;
+    font-family: roboto;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 7px; }
+
+.footer-some {
+  padding: 20px 0px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-some i {
+    color: #E9DD57; }
+
+.footer-infos-legale {
+  padding: 10px 25px; }
+  .footer-infos-legale a, .footer-infos-legale p {
+    padding: 0px;
+    display: content;
+    color: #FDFDFD;
+    font-family: roboto;
+    font-weight: lighter;
+    font-size: 10px;
+    text-align: center; }
+
+.background-color-jaune-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: -100%;
+  background-color: #E9DD57;
+  width: 100vw;
+  height: 100vh;
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s; }
+
+.position-fixed-active {
+  position: fixed;
+  top: 0px; }
+
+.menu-active {
+  left: 0px; }
+
+.background-menu {
+  width: 98%;
+  height: 100%;
+  position: relative; }
+  .background-menu a {
+    color: #FDFDFD;
+    margin-bottom: 50px;
+    text-decoration: none; }
+
+.fagnon-menu-blanc {
+  height: 100px;
+  width: 90px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 5px 5px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.fagnon-menu-noir {
+  height: 98px;
+  width: 86px;
+  border-radius: 0px 0px 5px 5px; }
+
+.poire-menu {
+  height: 50px;
+  fill: #FDFDFD; }
+
+.choix-menu {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+.choix-menu-distance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.menu-some i {
+  margin: 0px 10px;
+  border-radius: 50%;
+  border: solid 1px #E9DD57;
+  color: #E9DD57; }
+.menu-some .fa-facebook-f {
+  padding: 5px 8px; }
+.menu-some .fa-at {
+  padding: 5px; }
+.menu-some .fa-instagram {
+  padding: 5px 6px; }
+
+h1 {
+  text-align: center; }
+
+.index {
+  position: relative; }
+
+.navbar-index {
+  position: absolute;
+  top: -70px;
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s; }
+
+.navbar-index-active {
+  top: 0px; }
+
+.header {
+  height: 300px;
+  padding: 30px; }
+  .header .burger-menu-index {
+    width: 25px;
+    height: 25px;
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer; }
+    .header .burger-menu-index svg {
+      width: 100%;
+      position: absolute; }
+  .header .logo-header {
+    height: 90px;
+    fill: #FDFDFD; }
+
+.decouvrir {
+  padding: 40px; }
+  .decouvrir .card {
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1); }
+  .decouvrir .card-poire {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: #FDFDFD; }
+  .decouvrir .card-agneau {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: #FDFDFD; }
+  .decouvrir .card-club {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 50px;
+    fill: #FDFDFD; }
+  .decouvrir h2, .decouvrir p {
+    color: #FDFDFD; }
+
+.activites {
+  padding: 40px; }
+  .activites h1, .activites h2, .activites p {
+    color: #FDFDFD; }
+
+/*# sourceMappingURL=index.css.map */
