@@ -46,6 +46,18 @@ body {
   body .height-100pc {
     height: 100%; }
 
+.lottie-click {
+  width: 18px;
+  height: 18px;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  left: 3px; }
+
 .burger-menu {
   width: 25px;
   height: 25px;
